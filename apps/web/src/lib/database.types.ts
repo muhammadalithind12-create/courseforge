@@ -107,6 +107,126 @@ export type Database = {
         }
         Relationships: []
       }
+      cf_courses: {
+        Row: {
+          id: string
+          title: string
+          slug: string
+          description: string
+          thumbnail_emoji: string
+          level: string
+          price_cents: number
+          is_published: boolean
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          title: string
+          slug: string
+          description: string
+          thumbnail_emoji?: string
+          level: string
+          price_cents?: number
+          is_published?: boolean
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          title?: string
+          slug?: string
+          description?: string
+          thumbnail_emoji?: string
+          level?: string
+          price_cents?: number
+          is_published?: boolean
+          created_at?: string
+        }
+        Relationships: []
+      }
+      cf_modules: {
+        Row: {
+          id: string
+          course_id: string
+          title: string
+          position: number
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          course_id: string
+          title: string
+          position?: number
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          course_id?: string
+          title?: string
+          position?: number
+          created_at?: string
+        }
+        Relationships: []
+      }
+      cf_lessons: {
+        Row: {
+          id: string
+          module_id: string
+          course_id: string
+          title: string
+          content: string
+          video_url: string | null
+          duration_minutes: number
+          position: number
+          is_free_preview: boolean
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          module_id: string
+          course_id: string
+          title: string
+          content: string
+          video_url?: string | null
+          duration_minutes?: number
+          position?: number
+          is_free_preview?: boolean
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          module_id?: string
+          course_id?: string
+          title?: string
+          content?: string
+          video_url?: string | null
+          duration_minutes?: number
+          position?: number
+          is_free_preview?: boolean
+          created_at?: string
+        }
+        Relationships: []
+      }
+      cf_progress: {
+        Row: {
+          id: string
+          lesson_id: string
+          student_id: string
+          completed_at: string
+        }
+        Insert: {
+          id?: string
+          lesson_id: string
+          student_id: string
+          completed_at?: string
+        }
+        Update: {
+          id?: string
+          lesson_id?: string
+          student_id?: string
+          completed_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

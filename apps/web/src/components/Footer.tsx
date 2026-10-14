@@ -33,7 +33,7 @@ const Footer = () => {
                 height={32}
                 alt="Acme Logo"
               />
-              <T.H3 className="text-xl">Acme</T.H3>
+              <T.H3 className="text-xl">🎓 CourseForge</T.H3>
             </Link>
 
             <T.P className="text-sm text-muted-foreground">

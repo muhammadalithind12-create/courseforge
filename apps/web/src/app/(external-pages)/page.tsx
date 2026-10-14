@@ -1,39 +1,39 @@
 import { Separator } from '@/components/ui/separator';
-import { ArrowRight, Database, Lock, Palette, Shield, Zap } from 'lucide-react';
+import { ArrowRight, BookOpen, ChartBar, GraduationCap, PlayCircle, Sparkles, Trophy } from 'lucide-react';
 import { HomeCTA } from './home-cta';
 import { HomeFeatures, type HomeFeature } from './home-features';
 import { HomeHero } from './home-hero';
 
 const features: HomeFeature[] = [
   {
-    icon: Shield,
-    title: 'Type-Safe',
-    description: 'End-to-end TypeScript with auto-generated Supabase types. Catch errors at compile time.',
+    icon: BookOpen,
+    title: 'Structured Curriculum',
+    description: 'Courses organized into modules and bite-sized lessons — always know what to learn next.',
   },
   {
-    icon: Zap,
-    title: 'Modern Stack',
-    description: 'Next.js 16, TypeScript, Supabase, and Tailwind CSS — the best tools for modern web development.',
+    icon: ChartBar,
+    title: 'Progress Tracking',
+    description: 'Mark lessons complete and watch your course progress bars fill up. Your progress saves automatically.',
   },
   {
-    icon: Palette,
-    title: 'UI Components',
-    description: 'Beautiful components built with Radix UI and Tailwind. Accessible and customizable.',
+    icon: PlayCircle,
+    title: 'Free Previews',
+    description: 'Try the first lessons of every course free before you commit. No account, no credit card.',
   },
   {
-    icon: Lock,
-    title: 'Authentication',
-    description: 'Magic links, OAuth providers, and email/password with protected routes — all pre-configured.',
+    icon: GraduationCap,
+    title: 'Practical Content',
+    description: 'Real-world lessons on Next.js, Supabase, and freelancing — written to be useful, not to pad a syllabus.',
   },
   {
-    icon: Database,
-    title: 'Database Ready',
-    description: 'Supabase with Row Level Security, migrations, and seed data — ready for production.',
+    icon: Sparkles,
+    title: 'Learn at Your Pace',
+    description: 'Pick up exactly where you left off with continue-learning shortcuts on every course.',
   },
   {
-    icon: ArrowRight,
-    title: 'Fast Deployment',
-    description: 'Deploy to Vercel in minutes. CI/CD, preview deployments, and automatic type generation included.',
+    icon: Trophy,
+    title: 'Built for Builders',
+    description: 'Next.js 16, Supabase Postgres with Row Level Security, and a clean curriculum data model.',
   },
 ];
 
